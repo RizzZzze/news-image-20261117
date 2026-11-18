@@ -163,14 +163,24 @@
         <text x="768" y="30">ASIA</text><text x="816" y="124">OCEANIA</text>
       </g>
       <g id="pins" font-family="sans-serif" font-weight="bold" text-anchor="middle"></g>
+      <g font-family="sans-serif" font-size="10">
+        <rect x="310" y="148" width="414" height="18" fill="#ffffff" opacity="0.92" stroke="#8a8272" stroke-width="0.8"/>
+        <rect x="318" y="151.5" width="11" height="11" fill="#2456a6"/><text x="333" y="160.5" fill="#111">EUROPE</text>
+        <rect x="381" y="151.5" width="11" height="11" fill="#b3202c"/><text x="396" y="160.5" fill="#111">MIDDLE EAST</text>
+        <rect x="470" y="151.5" width="11" height="11" fill="#1e7d46"/><text x="485" y="160.5" fill="#111">ASIA</text>
+        <rect x="523" y="151.5" width="11" height="11" fill="#6d3aa3"/><text x="538" y="160.5" fill="#111">AFRICA</text>
+        <rect x="586" y="151.5" width="11" height="11" fill="#b35a00"/><text x="601" y="160.5" fill="#111">AMERICAS</text>
+        <rect x="661" y="151.5" width="11" height="11" fill="#0e7a8a"/><text x="676" y="160.5" fill="#111">OCEANIA</text>
+      </g>
     </svg>
   </div>
 
   <div class="foot"><span>All stories: events of, or first reported on, Tuesday 17 November 2026. Claims attributed where disputed.</span><span>THE DAILY GLOBE &middot; ONE-DAY EDITION</span></div>
 </div>
 <script>
-const P=[[1,612,36],[2,838,76],[3,638,66],[4,244,42],[5,658,78],[6,548,40],[7,560,24],[8,502,28],[9,560,74],[10,580,62],[11,600,72],[12,300,110],[13,482,44],[14,468,30],[15,592,52],[16,560,94],[17,538,110],[18,506,86],[19,594,98],[20,900,124],[21,884,52],[22,852,64],[23,722,64],[24,858,100],[25,688,72],[26,950,122],[27,722,32],[28,258,62],[29,185,66],[30,272,44],[31,62,56],[32,286,60],[33,84,74]];
+const C={EU:'#2456a6',ME:'#b3202c',AS:'#1e7d46',AF:'#6d3aa3',AM:'#b35a00',OC:'#0e7a8a'};
+const P=[[1,612,36,'EU'],[2,838,76,'AS'],[3,638,66,'ME'],[4,244,42,'AM'],[5,658,78,'ME'],[6,548,40,'EU'],[7,560,24,'EU'],[8,502,28,'EU'],[9,560,74,'ME'],[10,580,62,'ME'],[11,600,72,'ME'],[12,300,110,'AM'],[13,482,44,'EU'],[14,468,30,'EU'],[15,592,52,'ME'],[16,560,94,'AF'],[17,538,110,'AF'],[18,506,86,'AF'],[19,594,98,'AF'],[20,900,124,'OC'],[21,884,52,'AS'],[22,852,64,'AS'],[23,722,64,'AS'],[24,858,100,'AS'],[25,688,72,'AS'],[26,950,122,'OC'],[27,722,32,'AS'],[28,258,62,'AM'],[29,185,66,'AM'],[30,272,44,'AM'],[31,62,56,'AM'],[32,286,60,'AM'],[33,84,74,'AM']];
 const g=document.getElementById('pins');
-P.forEach(([n,x,y])=>{const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',n>9?9:8);c.setAttribute('fill','#b3202c');c.setAttribute('stroke','#fff');c.setAttribute('stroke-width','1.5');g.appendChild(c);const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',x);t.setAttribute('y',y+3);t.setAttribute('fill','#fff');t.setAttribute('font-size',n>9?8:9);t.textContent=n;g.appendChild(t);});
+P.forEach(([n,x,y,r])=>{const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',n>9?9:8);c.setAttribute('fill',C[r]);c.setAttribute('stroke','#fff');c.setAttribute('stroke-width','1.5');g.appendChild(c);const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',x);t.setAttribute('y',y+3);t.setAttribute('fill','#fff');t.setAttribute('font-size',n>9?8:9);t.textContent=n;g.appendChild(t);});
 </script>
 </body></html>
