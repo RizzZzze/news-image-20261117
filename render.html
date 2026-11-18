@@ -42,7 +42,7 @@
     line-height:1.03;text-wrap:balance}
   .l{font-size:8.5px;font-weight:700;letter-spacing:1px;color:#5a5344;margin-top:2px}
   /* compact index */
-  .index{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 12px;margin-top:4px}
+  .index{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 12px;margin-top:4px;border-top:2px solid #111;padding-top:2px}
   .idx{display:flex;gap:5px;align-items:flex-start;border-bottom:1px solid #ddd6c4;
     padding:1px 0;height:38px;overflow:hidden}
   .n{flex:0 0 18px;height:18px;background:#14365d;color:#fff;font-size:10px;font-weight:800;
@@ -88,6 +88,40 @@
   <div class="topbar"><span>VOL. I &mdash; No. 305</span><span>ONE DAY. THE WHOLE WORLD.</span><span>PRICE: ONE CAREFUL LOOK</span></div>
   <h1>THE DAILY GLOBE</h1>
   <div class="dateline"><span class="s">35 STORIES</span><span class="d">TUESDAY 17 NOVEMBER 2026</span><span class="s">6 CONTINENTS</span></div>
+
+  <div class="maphead"><b>WHERE IT HAPPENED</b><span>Numbers match the stories below &middot; Map schematic, pins approximate &middot; 34&ndash;35: SPACE</span></div>
+  <div class="map">
+    <svg viewBox="0 0 996 168" width="996" height="146" preserveAspectRatio="none">
+      <g fill="#d5e0da" stroke="#5a5344" stroke-width="1.2">
+        <path d="M30 22 L120 12 L200 18 L250 30 L285 44 L260 58 L235 52 L225 70 L190 82 L160 76 L150 88 L120 84 L95 66 L60 60 L38 44 Z"/>
+        <path d="M255 78 L300 74 L330 84 L345 104 L330 128 L305 150 L288 138 L280 112 L262 96 Z"/>
+        <path d="M470 34 L540 26 L560 38 L545 52 L505 56 L478 48 Z"/>
+        <path d="M480 62 L560 58 L590 70 L600 96 L575 118 L540 126 L505 112 L488 88 Z"/>
+        <path d="M560 20 L700 10 L830 16 L900 30 L920 48 L880 62 L840 56 L820 72 L760 78 L700 70 L640 76 L600 60 L570 40 Z"/>
+        <path d="M690 82 L730 78 L770 88 L760 108 L720 112 L692 100 Z"/>
+        <path d="M810 96 L880 90 L905 104 L890 124 L835 128 L812 112 Z"/>
+        <ellipse cx="838" cy="76" rx="7" ry="10"/>
+        <ellipse cx="800" cy="98" rx="12" ry="4"/><ellipse cx="828" cy="104" rx="10" ry="4"/>
+        <ellipse cx="892" cy="42" rx="4" ry="12"/>
+        <ellipse cx="950" cy="122" rx="5" ry="11"/>
+      </g>
+      <g font-family="sans-serif" font-size="9" fill="#5a5344" letter-spacing="1.5">
+        <text x="110" y="50">NORTH AMERICA</text><text x="266" y="100">S. AMERICA</text>
+        <text x="448" y="20">EUROPE</text><text x="490" y="122">AFRICA</text>
+        <text x="768" y="30">ASIA</text><text x="816" y="124">OCEANIA</text>
+      </g>
+      <g id="pins" font-family="sans-serif" font-weight="bold" text-anchor="middle"></g>
+      <g font-family="sans-serif" font-size="10">
+        <rect x="310" y="148" width="414" height="18" fill="#ffffff" opacity="0.92" stroke="#8a8272" stroke-width="0.8"/>
+        <rect x="318" y="151.5" width="11" height="11" fill="#2456a6"/><text x="333" y="160.5" fill="#111">EUROPE</text>
+        <rect x="381" y="151.5" width="11" height="11" fill="#b3202c"/><text x="396" y="160.5" fill="#111">MIDDLE EAST</text>
+        <rect x="470" y="151.5" width="11" height="11" fill="#1e7d46"/><text x="485" y="160.5" fill="#111">ASIA</text>
+        <rect x="523" y="151.5" width="11" height="11" fill="#6d3aa3"/><text x="538" y="160.5" fill="#111">AFRICA</text>
+        <rect x="586" y="151.5" width="11" height="11" fill="#b35a00"/><text x="601" y="160.5" fill="#111">AMERICAS</text>
+        <rect x="661" y="151.5" width="11" height="11" fill="#0e7a8a"/><text x="676" y="160.5" fill="#111">OCEANIA</text>
+      </g>
+    </svg>
+  </div>
 
   <div class="leads">
     <div class="lead big">
@@ -139,40 +173,6 @@
     <div class="idx"><span class="n">33</span><svg class="chip" viewBox="0 0 30 30" style="color:#f6f1e5"><rect width="30" height="30" fill="#23262e"/><use href="#i-film" x="4" y="4" width="22" height="22"/></svg><div><div class="h">BEZOS: I HELPED PICK NEW BOND</div><div class="l">FILM &middot; PATTINSON IS 007, BEZOS SAYS</div></div></div>
     <div class="idx"><span class="n">34</span><svg class="chip" viewBox="0 0 30 30" style="color:#e8b93c"><rect width="30" height="30" fill="#141b2e"/><use href="#i-star" x="4" y="4" width="22" height="22"/></svg><div><div class="h">TWIN BLACK HOLES IN ONE GALAXY</div><div class="l">SPACE &middot; NATURE: EARLY-UNIVERSE PAIR</div></div></div>
     <div class="idx"><span class="n">35</span><svg class="chip" viewBox="0 0 30 30" style="color:#7fb3d5"><rect width="30" height="30" fill="#141b2e"/><use href="#i-comet" x="4" y="4" width="22" height="22"/></svg><div><div class="h">COSMIC DUST HINTS AT HIDDEN WATER</div><div class="l">SPACE &middot; KUIPER BELT, STUDY SAYS</div></div></div>
-  </div>
-
-  <div class="maphead"><b>WHERE IT HAPPENED</b><span>Numbers match the stories above &middot; Map schematic, pins approximate &middot; 34&ndash;35: SPACE</span></div>
-  <div class="map">
-    <svg viewBox="0 0 996 168" width="996" height="146" preserveAspectRatio="none">
-      <g fill="#d5e0da" stroke="#5a5344" stroke-width="1.2">
-        <path d="M30 22 L120 12 L200 18 L250 30 L285 44 L260 58 L235 52 L225 70 L190 82 L160 76 L150 88 L120 84 L95 66 L60 60 L38 44 Z"/>
-        <path d="M255 78 L300 74 L330 84 L345 104 L330 128 L305 150 L288 138 L280 112 L262 96 Z"/>
-        <path d="M470 34 L540 26 L560 38 L545 52 L505 56 L478 48 Z"/>
-        <path d="M480 62 L560 58 L590 70 L600 96 L575 118 L540 126 L505 112 L488 88 Z"/>
-        <path d="M560 20 L700 10 L830 16 L900 30 L920 48 L880 62 L840 56 L820 72 L760 78 L700 70 L640 76 L600 60 L570 40 Z"/>
-        <path d="M690 82 L730 78 L770 88 L760 108 L720 112 L692 100 Z"/>
-        <path d="M810 96 L880 90 L905 104 L890 124 L835 128 L812 112 Z"/>
-        <ellipse cx="838" cy="76" rx="7" ry="10"/>
-        <ellipse cx="800" cy="98" rx="12" ry="4"/><ellipse cx="828" cy="104" rx="10" ry="4"/>
-        <ellipse cx="892" cy="42" rx="4" ry="12"/>
-        <ellipse cx="950" cy="122" rx="5" ry="11"/>
-      </g>
-      <g font-family="sans-serif" font-size="9" fill="#5a5344" letter-spacing="1.5">
-        <text x="110" y="50">NORTH AMERICA</text><text x="266" y="100">S. AMERICA</text>
-        <text x="448" y="20">EUROPE</text><text x="490" y="122">AFRICA</text>
-        <text x="768" y="30">ASIA</text><text x="816" y="124">OCEANIA</text>
-      </g>
-      <g id="pins" font-family="sans-serif" font-weight="bold" text-anchor="middle"></g>
-      <g font-family="sans-serif" font-size="10">
-        <rect x="310" y="148" width="414" height="18" fill="#ffffff" opacity="0.92" stroke="#8a8272" stroke-width="0.8"/>
-        <rect x="318" y="151.5" width="11" height="11" fill="#2456a6"/><text x="333" y="160.5" fill="#111">EUROPE</text>
-        <rect x="381" y="151.5" width="11" height="11" fill="#b3202c"/><text x="396" y="160.5" fill="#111">MIDDLE EAST</text>
-        <rect x="470" y="151.5" width="11" height="11" fill="#1e7d46"/><text x="485" y="160.5" fill="#111">ASIA</text>
-        <rect x="523" y="151.5" width="11" height="11" fill="#6d3aa3"/><text x="538" y="160.5" fill="#111">AFRICA</text>
-        <rect x="586" y="151.5" width="11" height="11" fill="#b35a00"/><text x="601" y="160.5" fill="#111">AMERICAS</text>
-        <rect x="661" y="151.5" width="11" height="11" fill="#0e7a8a"/><text x="676" y="160.5" fill="#111">OCEANIA</text>
-      </g>
-    </svg>
   </div>
 
   <div class="foot"><span>All stories: events of, or first reported on, Tuesday 17 November 2026. Claims attributed where disputed.</span><span>THE DAILY GLOBE &middot; ONE-DAY EDITION</span></div>
